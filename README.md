@@ -1,26 +1,7 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# Gameplay
 
+Gameplay is really simple. you just have to mimic the right table by moving the red square around in the left table, the red square will leave behind an arrow in the direction you leve the current square. If you get to a square where there is already an arrow, you will override the existing arrow.
 
-Hi there! Welcome to Cloud9 IDE!
+# Why
 
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+We got an assignment to invent a game (I just went ahead and coded it anyway) only consisting of squares, triangles, arrows and the numbers 0-9. We didn't have to use all of those things, so I only used squares and arrows.
