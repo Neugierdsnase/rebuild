@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+td {
+    background-color: #869D96;
+    height: 5em;
+    width: 5em;
+}
+
+#gamecontainer {
+    margin: auto;
+    margin-top: 6em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#startcontainer {
+    margin-top: 11em;
+}
+
+.Player {
+    background-color: #FB6107;
+}
+
+.leftArrow {
+    text-align: center;
+}
+
+.rightArrow {
+    text-align: center;
+}
+
+.upArrow {
+    text-align: center;
+}
+
+.downArrow {
+    text-align: center;
+}
+
+.invisible {
+    display: none;
+}
+
+.completedLevel {
+    position: absolute;
+    z-index: 1000;
+}
+
+h1 {
+    font-family: 'Bungee Hairline', cursive;
+    color: #233D4D;
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    color: #252323;
+}
+
+p,a {
+    font-family: 'Raleway', Tahoma;
+    text-decoration: none;
+    color: #252323;
+}
+
+i {
+    color: #FCF7FF;
+}
