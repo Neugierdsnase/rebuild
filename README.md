@@ -4,4 +4,4 @@ Gameplay is really simple. you just have to mimic the right table by moving the 
 
 # Why
 
-We got an assignment to invent a game (I just went ahead and coded it anyway) only consisting of squares, triangles, arrows and the numbers 0-9. We didn't have to use all of those things, so I only used squares and arrows.
+We got an assignment to invent a game (I just went ahead and coded it anyway) only consisting of squares, circles, triangles, arrows and the numbers 0-9. We didn't have to use all of those things, so I only used squares and arrows.
