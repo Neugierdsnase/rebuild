@@ -1,5 +1,7 @@
 'use strict';
 
+let playing = true;
+
 function Position (row, column) {
     this.row = 0;
     this.column = 0;
@@ -63,31 +65,34 @@ function moveDown(playerPosition) {
 function movePlayer() {
     $('html').on("keydown", function(e) {
         e.preventDefault(); // prevent the default action (scroll / move caret)
-        switch(e.which) {
-            case 37: 
-                moveLeft(playerPosition);
-                addLeftArrow();
-                break;
-
-            case 38: 
-                moveUp(playerPosition);
-                addUpArrow();
-                break;
-
-            case 39: 
-                moveRight(playerPosition);
-                addRightArrow();
-                break;
-
-            case 40: 
-                moveDown(playerPosition);
-                addDownArrow();
-                break;
-
-            default: return; // exit this handler for other keys
+        if (playing) {
+            switch(e.which) {
+                case 37: 
+                    moveLeft(playerPosition);
+                    addLeftArrow();
+                    break;
+        
+                case 38: 
+                    moveUp(playerPosition);
+                    addUpArrow();
+                    break;
+        
+                case 39: 
+                    moveRight(playerPosition);
+                    addRightArrow();
+                    break;
+        
+                case 40: 
+                    moveDown(playerPosition);
+                    addDownArrow();
+                    break;
+    
+                default: return; // exit this handler for other keys
+            }
         }
         checkForWin();
     });
+
 }
 
 $(document).ready(movePlayer());
@@ -150,6 +155,7 @@ function checkForWin() {
 }
 
 function levelSolved() {
+    playing = false;
     $('#completedLevel').removeClass('invisible');
     $('#startover').addClass('invisible');
 }
