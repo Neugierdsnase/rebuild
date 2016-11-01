@@ -1,0 +1,30 @@
+{
+  "name": "rebuild",
+  "version": "0.0.1",
+  "description": "a tiny puzzle game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neugierdsnase/rebuild.git"
+  },
+  "keywords": [
+    "game",
+    "rebuild",
+    "puzzle"
+  ],
+  "author": "Konstantin Kovar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neugierdsnase/rebuild/issues"
+  },
+  "homepage": "https://github.com/Neugierdsnase/rebuild#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}
