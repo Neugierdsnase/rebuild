@@ -1,0 +1,46 @@
+extends layout.pug
+
+block levelTitle
+    h1 Level 2
+
+block solutionTiles
+    table(id="solution")
+        tr(class="row0")
+            td(id="sol00")
+                i(class="material-icons") arrow_downward
+            td(id="sol01")
+                i(class="material-icons") arrow_back
+            td(id="sol02")
+                i(class="material-icons") arrow_back
+            td(id="sol03")
+                i(class="material-icons") arrow_back
+        tr(class="row1")
+            td(id="sol10")
+                i(class="material-icons") arrow_downward
+            td(id="sol11")
+            td(id="sol12")
+                i(class="material-icons") arrow_upward
+            td(id="sol13")
+        tr(class="row2")
+            td(id="sol20")
+                i(class="material-icons") arrow_forward
+            td(id="sol21")
+                i(class="material-icons") arrow_forward
+            td(id="sol22")
+                i(class="material-icons") arrow_upward
+            td(id="sol23")
+        tr(class="row3")
+            td(id="sol30")
+            td(id="sol31")
+            td(id="sol32")
+            td(id="sol33")
+    
+
+block startOver
+    a(href="level3.html")
+        p start over
+
+block completedLevel
+    h2 you completed the level!
+    a(href="./level3")
+        p next level

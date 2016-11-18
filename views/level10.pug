@@ -1,0 +1,51 @@
+extends layout.pug
+
+block levelTitle
+    h1 Level 10
+
+block solutionTiles
+    table(id="solution")
+        tr(class="row0")
+            td(id="sol00")
+                i(class="material-icons") arrow_forward
+            td(id="sol01")
+                i(class="material-icons") arrow_downward
+            td(id="sol02")
+                i(class="material-icons") arrow_back
+            td(id="sol03")
+                i(class="material-icons") arrow_downward
+        tr(class="row1")
+            td(id="sol10")
+                i(class="material-icons") arrow_forward
+            td(id="sol11")
+                i(class="material-icons") arrow_downward
+            td(id="sol12")
+                i(class="material-icons") arrow_downward
+            td(id="sol13")
+                i(class="material-icons") arrow_back
+        tr(class="row2")
+            td(id="sol20")
+                i(class="material-icons") arrow_forward
+            td(id="sol21")
+                i(class="material-icons") arrow_upward
+            td(id="sol22")
+                i(class="material-icons") arrow_back
+            td(id="sol23")
+                i(class="material-icons") arrow_downward
+        tr(class="row3")
+            td(id="sol30")
+                i(class="material-icons") arrow_upward
+            td(id="sol31")
+                i(class="material-icons") arrow_back
+            td(id="sol32")
+                i(class="material-icons") arrow_upward
+            td(id="sol33")
+                i(class="material-icons") arrow_back
+    
+
+block startOver
+    a(href="level10.html")
+        p start over
+
+block completedLevel
+    h2 you completed the whole game, well done!

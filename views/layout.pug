@@ -1,0 +1,45 @@
+doctype html
+
+html
+    head
+        meta(charset="ISO-8859-1")
+        title rebuild
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Poiret+One|Raleway" rel="stylesheet")
+        link(href="/css/index.css" rel="stylesheet" type="text/css")
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+    
+    body
+        block levelTitle
+        div(id="gamecontainer")
+            table(id="playingfield")
+                tr(class="row0")
+                    td(class="Player" id="00")
+                    td(id="01")
+                    td(id="02")
+                    td(id="03")
+                tr(class="row1")
+                    td(id="10")
+                    td(id="11")
+                    td(id="12")
+                    td(id="13")
+                tr(class="row2")
+                    td(id="20")
+                    td(id="21")
+                    td(id="22")
+                    td(id="23")
+                tr(class="row3")
+                    td(id="30")
+                    td(id="31")
+                    td(id="32")
+                    td(id="33")
+                
+            block solutionTiles
+            
+        div(id="startover")
+            block startOver
+                
+        div(id="completedLevel" class="invisible")
+            block completedLevel
+
+        script(src="/js/index.js" type="text/javascript")           
