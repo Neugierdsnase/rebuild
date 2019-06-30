@@ -2,13 +2,13 @@
 
 let playing = true;
 
-function Position (row, column) {
+function Position(row, column) {
     this.row = 0;
     this.column = 0;
     this.DOMElement = document.getElementById((this.row.toString() + this.column.toString()));
 }
 
-Position.prototype.updateDOMElement = function() {
+Position.prototype.updateDOMElement = function () {
     this.DOMElement = document.getElementById((this.row.toString() + this.column.toString()));
 }
 
@@ -63,30 +63,30 @@ function moveDown(playerPosition) {
 }
 
 function movePlayer() {
-    $('html').on("keydown", function(e) {
+    $('html').on("keydown", function (e) {
         e.preventDefault(); // prevent the default action (scroll / move caret)
         if (playing) {
-            switch(e.which) {
-                case 37: 
+            switch (e.which) {
+                case 37:
                     moveLeft(playerPosition);
                     addLeftArrow();
                     break;
-        
-                case 38: 
+
+                case 38:
                     moveUp(playerPosition);
                     addUpArrow();
                     break;
-        
-                case 39: 
+
+                case 39:
                     moveRight(playerPosition);
                     addRightArrow();
                     break;
-        
-                case 40: 
+
+                case 40:
                     moveDown(playerPosition);
                     addDownArrow();
                     break;
-    
+
                 default: return; // exit this handler for other keys
             }
         }
@@ -135,23 +135,23 @@ function checkForWin() {
         $('#01').html() == $('#sol01').html() &&
         $('#02').html() == $('#sol02').html() &&
         $('#03').html() == $('#sol03').html() &&
-        
+
         $('#10').html() == $('#sol10').html() &&
         $('#11').html() == $('#sol11').html() &&
         $('#12').html() == $('#sol12').html() &&
         $('#13').html() == $('#sol13').html() &&
-        
+
         $('#20').html() == $('#sol20').html() &&
         $('#21').html() == $('#sol21').html() &&
         $('#22').html() == $('#sol22').html() &&
         $('#23').html() == $('#sol23').html() &&
-        
+
         $('#30').html() == $('#sol30').html() &&
         $('#31').html() == $('#sol31').html() &&
         $('#32').html() == $('#sol32').html() &&
         $('#33').html() == $('#sol33').html()) {
-            levelSolved();
-        }
+        levelSolved();
+    }
 }
 
 function levelSolved() {
